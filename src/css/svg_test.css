@@ -1,0 +1,70 @@
+body {
+  padding: 50px;
+}
+
+.box {
+  display: grid;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  justify-items: center;
+}
+
+.svg {
+  width: 400px;
+  height: 300px;
+  border: 2px #000000 solid;
+  margin-bottom: 50px;
+}
+
+.svg-text {
+  overflow: visible;
+}
+
+.text {
+  font-size: 20px;
+  fill: black;
+}
+
+.rect {
+  stroke: brown;
+  stroke-width: 10px;
+  fill: none;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  transition: all 1s ease-in-out;
+}
+
+.svg-rect:hover .rect {
+  stroke-dashoffset: 0;
+}
+
+.circle {
+  stroke-width: 0;
+  transition: all 5s ease-in-out;
+}
+
+.svg-circle .circle:hover {
+  stroke-width: 200;
+}
+
+.apple:hover .svg-apple {
+  stroke-dashoffset: 0;
+  fill: #b3d4fc;
+}
+
+.svg-apple {
+  fill: none;
+  stroke: brown;
+  stroke-width: 10px;
+  stroke-dasharray: 1265;
+  stroke-dashoffset: 1265;
+  transition: all 2s ease-in-out;
+}
+
+.image {
+  height: 300px;
+  clip-path: url(#apple);
+}
+
+.poliline {
+  stroke-linejoin: round;
+}

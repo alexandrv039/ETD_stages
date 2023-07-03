@@ -1,0 +1,29 @@
+@keyframes rotate-stage {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.load-arrows {
+  animation: rotate-stage 1000ms linear infinite;
+}
+
+.loader-example2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.loader-example {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  height: 100px;
+  width: 100px;
+}
